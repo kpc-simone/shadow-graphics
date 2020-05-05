@@ -1,0 +1,38 @@
+/scripts
+
+example2.py: Generates a series of 11 visual looming stimuli with same the same timing profile as example1.py
+
+The nature of expansion varies between trials and may be one of
+- linear expansion, 
+- exponential expansion,
+- sigmoidal expanion,
+- shrinking,
+- no expansion,
+
+example1.py Generates a series of 10 identical visual looming stimuli for rodent behavioral studies upon mouseclick.
+
+Each stimulus in the series is 8 seconds long. 
+Each stimulus consists of a disk that appears small and is stable for three seconds, undergoes
+expansion for 2 seconds, and is stable at its largest for 3 seconds before disappearing.
+
+Dependencies
+numpy==1.16.2
+pywin32==223
+These scripts were tested on a Dell 1908FP monitor. 
+
+/src
+disk_expansions.py: Functions used in the examples.
+
+graphics.py: portable library with low-level graphics functions used in disk_expansions.py and the examples.
+
+From its documentation: 
+
+" The library is designed to make it very easy for novice programmers to
+experiment with computer graphics in an object oriented fashion. It is
+written by John Zelle for use with the book "Python Programming: An
+Introduction to Computer Science" (Franklin, Beedle & Associates).
+
+" For complete documentation, see Chapter 4 of "Python
+Programming: An Introduction to Computer Science" by John Zelle,
+published by Franklin, Beedle & Associates.  Also see
+http://mcsp.wartburg.edu/zelle/python for a quick reference. "
