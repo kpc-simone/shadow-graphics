@@ -36,7 +36,7 @@ def main():
     er_lin = ( rf_l - r0 ) / ( EX - SS )    
     
     win = GraphWin("LVS Example 1", width, height)
-    win.setBackground("white")
+    win.setBackground("grey")
     
     print('Click window to start shadow expansion series:')
     win.getMouse()
