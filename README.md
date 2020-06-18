@@ -2,7 +2,7 @@
 
 Python scripts and source code for simulating aerial threats.
 
-![shadow graphics demo](demo/demo.gif)
+![shadow graphics demo](demo/demo.gif =250x)
 
 ## Installation
 * Install python with the following packages:
