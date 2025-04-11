@@ -88,3 +88,21 @@ def stable(x,y,r0,window,SL,FR):
         obj.setFill("black")
         update(FR)
     return obj
+    
+def sweep(xi,yi,sr_lin_x,sr_lin_y,r0,win,SD,FR):
+    obj = Circle(Point(xi,yi), r0)
+    obj.setFill("black")
+    obj.draw(win)    
+    for i in range(SD):
+    
+        xi += sr_lin_x
+        yi += sr_lin_y
+        new_obj = Circle(Point(xi,yi), r0)
+        new_obj.setFill("black")
+        new_obj.draw(win)  
+        update(FR)
+        
+        obj.undraw()
+        obj = new_obj
+    obj.undraw()
+    return obj
